@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "plugin:flowtype/recommended",
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "import"
+  ],
+  "globals": {
+    "document": true,
+    "window": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "curly": [
+      "error",
+      "multi"
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "dot-notation": "warn",
+    "default-case": "warn",
+    "no-multi-str": "error",
+    "space-before-function-paren": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-multi-spaces": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "vars-on-top": "error",
+    "template-curly-spacing": ["error", "always"],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": false,
+        "allowTernary": false
+      }
+    ]
+  }
+}

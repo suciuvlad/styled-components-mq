@@ -1,1 +1,1 @@
-# js-mediaqueries
+# styled-components-mq
