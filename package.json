@@ -7,7 +7,8 @@
     "linter": "yarn run eslint src",
     "test:flow": "yarn run flow",
     "test": "yarn run jest",
-    "ci": "yarn run test:flow && yarn run linter && yarn run test"
+    "ci": "yarn run test:flow && yarn run linter && yarn run test",
+    "publish:npm:beta": "npm publish --tag=next"
   },
   "repository": "git@github.com:suciuvlad/styled-components-mq.git",
   "author": "Vlad Suciu <suciu.vlad@gmail.com>",
