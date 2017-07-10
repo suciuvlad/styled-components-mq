@@ -1,9 +1,13 @@
 import { css } from 'styled-components';
-import mq from './media-queries';
+import mediaqueries from './media-queries';
 
-export default data =>
-  (...args) => css`
-    ${ mq(data) } {
-      ${ css(...args) }
-    }
-  `;
+export default (breakpoints) => {
+  const mq = mediaqueries(breakpoints);
+
+  return data =>
+    (...args) => css`
+      ${ mq(data) } {
+        ${ css(...args) }
+      }
+    `;
+};

@@ -84,21 +84,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n    ', ' {\n      ', '\n    }\n  '], ['\n    ', ' {\n      ', '\n    }\n  ']);
+var _templateObject = _taggedTemplateLiteral(['\n      ', ' {\n        ', '\n      }\n    '], ['\n      ', ' {\n        ', '\n      }\n    ']);
 
 var _styledComponents = __webpack_require__(1);
 
-var _styledComponentsMq = __webpack_require__(2);
+var _mediaQueries = __webpack_require__(2);
 
-var _styledComponentsMq2 = _interopRequireDefault(_styledComponentsMq);
+var _mediaQueries2 = _interopRequireDefault(_mediaQueries);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-exports.default = function (data) {
-  return function () {
-    return (0, _styledComponents.css)(_templateObject, (0, _styledComponentsMq2.default)(data), _styledComponents.css.apply(undefined, arguments));
+exports.default = function (breakpoints) {
+  var mq = (0, _mediaQueries2.default)(breakpoints);
+
+  return function (data) {
+    return function () {
+      return (0, _styledComponents.css)(_templateObject, mq(data), _styledComponents.css.apply(undefined, arguments));
+    };
   };
 };
 
