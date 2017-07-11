@@ -57,7 +57,7 @@ const mq = mediaQueries();
 
 const theme = {
 	bodyColor: 'green',
-    mq
+  mq
 };
 
 <ThemeProvider theme={theme}>
