@@ -14,8 +14,6 @@ The easiest way to use **styled-components-mq** is to install it from NPM and in
 
 ## Usage
 
-The first step is to combine the styled-components-mq reducer with your own application reducers
-
 ### Syntax
 * mq($name: <$responsiveSuffix>)
 * mq([$from: <$responsiveSuffix>], [$until: <$responsiveSuffix>])
