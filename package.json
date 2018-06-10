@@ -1,7 +1,8 @@
 {
   "name": "styled-components-mq",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "build/styled-components-mq.js",
+  "types": "styled-components-mq.d.ts",
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "linter": "yarn run eslint src",
@@ -30,6 +31,9 @@
     "webpack": "^3.1.0"
   },
   "dependencies": {
-    "styled-components": "^2.1.1"
+    "styled-components": "^3.3.2"
+  },
+  "peerDependencies": {
+    "styled-components": "^2.0.0 || ^3.0.0"
   }
 }
