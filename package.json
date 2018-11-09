@@ -1,6 +1,6 @@
 {
   "name": "styled-components-mq",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "build/styled-components-mq.js",
   "types": "styled-components-mq.d.ts",
   "scripts": {
@@ -34,6 +34,6 @@
     "styled-components": "^4.0.3"
   },
   "peerDependencies": {
-    "styled-components": "^2.0.0 || ^3.0.0 || ^3.0.0"
+    "styled-components": "^2.0.0 || ^3.0.0 || ^4.0.0"
   }
 }
